@@ -22,10 +22,6 @@
     .slider__content li a::after {
         top: 50%;
     }
-
-    .show-on-home-page {
-        text-shadow: 1px 1px 1px #000 !important;
-    }
     /* ABOUT */
     .about__img {
         position: relative;
@@ -146,6 +142,11 @@
 
     .background__caption p {
         font-size: 1.4rem;
+    }
+
+    
+    .show-on-home-page {
+        text-shadow: 1px 1px 1px #000 !important;
     }
 
     /* ABOUT */
