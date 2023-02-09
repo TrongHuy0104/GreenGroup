@@ -113,10 +113,6 @@
         padding: 18px 20px;
     }
 
-    .navbar__item-link:last-of-type {
-        margin-bottom: 20px;
-    }
-
     .navbar__menu {
         display: block;
     }
@@ -143,10 +139,13 @@
     .background__caption p {
         font-size: 1.4rem;
     }
-
     
     .show-on-home-page {
         text-shadow: 1px 1px 1px #000 !important;
+    }
+
+    .last-child {
+        margin-bottom: 20px;
     }
 
     /* ABOUT */
