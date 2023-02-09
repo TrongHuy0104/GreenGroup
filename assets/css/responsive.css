@@ -6,12 +6,15 @@
 /* Tablet + Mobile */ 
 @media (max-width: 63.9375em) {
 
+    .show-on-home-page {
+        text-shadow: 1px 1px 1px #000;
+    }
+
     .background__caption {
         width: 80%;
     }
 
     .navbar__item-link {
-        /* text-shadow: 1px 1px 1px #000; */
         text-shadow: none;
     }
 
@@ -112,6 +115,10 @@
 
     .navbar__item-link {
         padding: 18px 20px;
+    }
+
+    .navbar__item-link:last-child {
+        margin-bottom: 20px;
     }
 
     .navbar__menu {
