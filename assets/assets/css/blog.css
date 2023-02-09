@@ -1,0 +1,95 @@
+.blog__container {
+    padding: 100px 0;
+}
+
+.blog__title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.blog {
+    box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+    margin-top: 32px;
+    transition: .2s;
+}
+
+.blog:hover {
+    box-shadow: 0 10px 25px rgb(0 0 0 / 15%);
+}
+
+.blog__img {
+    width: 100%;
+}
+
+.blog__img img {
+    width: 100%;
+    height: auto;
+}
+
+.blog__content {
+    background-color: var(--white-color);
+}
+
+.blog__name {
+    font-size: 2rem;
+}
+
+.blog__name:hover a {
+    color: var(--primary-color);
+}
+
+.blog__name a {
+    display: block;
+    padding: 24px 20px 10px;
+    text-decoration: none;
+    color: var(--dark-color);
+    transition: .2s;
+}
+
+.blog__desc {
+    padding: 0 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 1.4rem;
+    color: var(--sub-text-color);
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.blog__content > a {
+    display: block;
+    padding: 10px 20px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--sub-text-color);
+    transition: .2s;
+}
+
+.blog__content > a:hover {
+    color: var(--primary-color);
+}
+
+.footer {
+    background-color: var(--footer-color);
+}
+
+.footer p {
+    color: var(--white-color);
+}
+
+.footer__social a {
+    color: var(--footer-color);
+    background-color: var(--white-color);
+    transition: .2s;
+}
+
+.footer__social a:hover {
+    opacity: 0.8;
+}

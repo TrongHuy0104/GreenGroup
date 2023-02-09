@@ -1,0 +1,230 @@
+:root {
+    --white-color: #fff;
+    --dark-color: #424242;
+    --primary-color: #6ab43e;
+    --text-color: #6B6B6B;
+    --sub-text-color: #7f7f7f;
+    --footer-color: #343A43;
+    --header-height: 100px;
+    --navHeightBefore: 0px;
+    --navHeightAfter: 28px;
+}
+
+* {
+    box-sizing: inherit;
+    /* border: 1px solid #000 !important; */
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.2;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.main {
+    overflow: hidden;
+}
+
+.header {
+    height: var(--header-height);
+}
+
+.navbar {
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.navbar__logo .logo {
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+}
+
+.navbar__logo img {
+    width: 100%;
+    height: 40px;
+}
+
+.navbar__list {
+    display: flex;
+    height: var(--header-height);
+    list-style: none;
+}
+
+.navbar__item {
+    position: relative;
+}
+
+.navbar__item-link {
+    position: relative;
+    padding: 40px 21px;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s ease-in-out;
+}
+
+.navbar__item-link::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    width: var(--navHeightBefore);
+    height: 2px;
+    margin-top: 10px;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    transition: .3s ease-in-out;
+}
+
+.navbar__item:hover .navbar__item-link::after {
+    width: var(--navHeightAfter);
+}
+
+.navbar__item:hover .navbar__item-link {
+    color: var(--primary-color);
+}
+
+.navbar__menu {
+    background-color: transparent;
+    border: none;
+    color: var(--dark-color);
+    font-size: 28px;
+    padding: 24px 21px;
+    cursor: pointer;
+    transition: .2s;
+    display: none;
+}
+
+.navbar__menu:hover {
+    opacity: 0.8;
+}
+
+.navbar__mobile {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    min-height: 600px;
+    display: none;
+}
+
+.show-on-mobile {
+    display: block !important;
+}
+
+.active {
+    display: block;
+}
+
+.slider {
+    position: relative;
+    background-image: url(/assets/img/slider03jpg.jpg);
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 140px 0 133px;
+    z-index: 50;
+}
+
+.slider::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: "";
+    z-index: -99;
+    background: linear-gradient(to right, rgba(106, 180, 62, 0.9) 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.slider__content h2 {
+    font-size: 3rem;
+    color: var(--white-color);
+    margin-bottom: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.slider__content ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.slider__content li {
+    color: var(--white-color);
+    font-size: 1.2rem;
+}
+
+.slider__content li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 16px 9px 16px 0px;
+    margin-right: 16px;
+    display: block;
+    position: relative;
+}
+
+.slider__content li a::after {
+    content: ">";
+    position: absolute;
+    right: -17%;
+    top: 48%;
+    transform: translateY(-50%);
+    font-size: 1.8rem;
+    display: block;
+}
+
+.footer {
+    text-align: center;
+    padding: 60px 0 48px;
+    background-color: var(--footer-color);
+}
+
+.footer__logo {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.footer p {
+    width: 100%;
+    font-size: 1.4rem;
+    color: var(--white-color);
+    line-height: 1.4;
+}
+
+.footer__socials {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.footer__social ~ .footer__social {
+    margin-left: 12px;
+}
+
+.footer__social a {
+    text-decoration: none;
+    padding: 12px 12px;
+    font-size: 1.8rem;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    color: var(--footer-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+}
+
+.footer__social a:hover {
+    color: var(--white-color);
+    background-color: var(--footer-color);
+}
