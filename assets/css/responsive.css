@@ -6,10 +6,6 @@
 /* Tablet + Mobile */ 
 @media (max-width: 63.9375em) {
 
-    .show-on-home-page {
-        text-shadow: 1px 1px 1px #000;
-    }
-
     .background__caption {
         width: 80%;
     }
@@ -25,6 +21,10 @@
 
     .slider__content li a::after {
         top: 50%;
+    }
+
+    .show-on-home-page {
+        text-shadow: 1px 1px 1px #000 !important;
     }
     /* ABOUT */
     .about__img {
