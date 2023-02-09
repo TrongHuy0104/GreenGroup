@@ -113,7 +113,7 @@
         padding: 18px 20px;
     }
 
-    .navbar__item-link:last-child {
+    .navbar__item-link:last-of-type {
         margin-bottom: 20px;
     }
 
