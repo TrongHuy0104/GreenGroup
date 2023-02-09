@@ -1,0 +1,128 @@
+.contact {
+    padding: 100px 0;
+    background-color: #f4f5f8;
+}
+
+.contact-wrap {
+    padding: 80px 50px;
+    background-color: var(--white-color);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.contact__title {
+    font-size: 3rem;
+    margin-bottom: 60px;
+    color: var(--dark-color);
+    font-weight: 600;
+    text-align: center;
+}
+
+.contact__info {
+    padding: 0 80px 0 40px;
+}
+
+.contact__info-intro,
+.contact__info-address h3,
+.contact__info-social h3,
+.contact__form-title {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.contact__info-desc,
+.contact__form-desc {
+    margin-top: 10px;
+}
+
+.contact__info-desc,
+.contact__form-desc {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-bottom: 40px;
+}
+
+.contact__address-desc {
+    margin: 20px 0 30px 0;
+}
+
+.contact__address-item {
+    display: flex;
+    align-items: center;
+}
+
+.contact__address-item i {
+    font-size: 2.2rem;
+    color: #2196F3;
+    margin-right: 6px;
+}
+
+.contact__address-item div {
+    width: 100%;
+    position: relative;
+}
+
+.contact__address-item div::after {
+    display: block;
+    content: "";
+    height: 1px;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--dark-color);
+}
+
+.contact__address-item p,
+.contact__address-item a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--sub-text-color);
+    padding: 10px 0;
+    display: block;
+    transition: 0.2s;
+    line-height: 1.4;
+}
+
+.contact__address-item a:hover {
+    color: var(--primary-color);
+}
+
+.contact__social-list {
+    list-style: none;
+    display: flex;
+}
+
+.contact__social-list li a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: 12px 12px;
+    margin-top: 20px;
+    margin-right: 6px;
+    color: #8da4c5;
+    background-color: #f4f5f8;
+    border-radius: 50%;
+    transition: .2s;
+}
+
+.contact__social-list li a:hover {
+    color: #f4f5f8;
+    background-color: #8da4c5;
+}
+
+.form {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.form-submit {
+    background-color: var(--primary-color);
+    transition: .2s;
+}
+
+.form-submit:hover {
+    opacity: 0.8;
+}
