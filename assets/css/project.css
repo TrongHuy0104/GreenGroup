@@ -1,0 +1,171 @@
+
+
+h2 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    text-align: center;
+    margin: 30px 0;
+}
+
+h3 {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    margin: 15px 0 10px;
+    font-style: italic;
+}
+
+p {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-align: justify;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.project__picture {
+    margin-top: 10px 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    border-radius: 10px;
+}
+
+/* Slideshow */
+.container {
+    /* margin: 50px auto; */
+    width: 700px;
+    height: 510px;
+    box-shadow: 0px 0px 10px #aaa;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 40px;
+}
+
+.main-picture {
+    height: 85%;
+    position: relative;
+}
+
+.main-img {
+    width: 100%;
+    height: 100%;
+    transition: all ease .5s;
+    /* animation: slideLeft ease-in-out .5s ; */
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100%);
+    } 
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100%);
+    } 
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.main-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all ease .5s;
+}
+
+.control {
+    position: absolute;
+    color: #fff;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+.control:hover {
+    opacity: .8;
+}
+
+.control.prev {
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.control.next {
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.img-list {
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+    height: 10px;              /* height of horizontal scrollbar ← You're missing this */
+    width: 10px;               /* width of vertical scrollbar */
+
+}
+
+::-webkit-scrollbar-track {
+    border-top: unset solid 10px transparent;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    box-shadow: 0 0 10px #aaa;
+}
+
+::-webkit-scrollbar-thumb {
+    border-top: unset solid 10px transparent;
+    background: #888; 
+    transition: all .3s;
+    border-radius: 4px;
+}
+
+.img-item {
+    cursor: pointer;
+    padding: 5px;
+    background-color: #444; 
+    border-radius: 2px;
+}
+
+.img-item.active {
+    background-color: rgb(220, 86, 86);
+}
+
+.img-item:hover img{
+    transform: scale(1.1);
+}
+
+.img-item img {
+    width: 100%;
+    height: 72%;
+    box-shadow: 0 0 4px #aaa;
+    overflow: hidden;
+    transition: all .3s;
+}
